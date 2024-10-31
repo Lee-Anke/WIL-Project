@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel="stylesheet">
+
+    <title>Register | RealHome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Add this inside the main container or near the form -->
+<div class="register__blob-container">
+  <svg class="register__blob" viewBox="0 0 566 840" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0" mask-type="alpha">
+          <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+              0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+              591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+              167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+      </mask>
+      <g mask="url(#mask0)">
+          <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+              0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+              591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+              167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+          
+          <!-- Insert your image (recommended size: 1000 x 1200) -->
+          <image class="register__img" href="assets/background.jpg"/>
+      </g>
+  </svg>
+</div>
+
+<!--=============== REGISTER ===============-->
+<div class="register container grid" id="registerAccessLogin">
+  <!--===== REGISTER ACCESS =====-->
+  <div class="register__access">
+      
+      <div class="register__area">
+          <form action="index.html" method="POST" class="register__form">
+            <h1 class="register__title">Create new account</h1>
+              <div class="register__content grid">
+                  <div class="register__box">
+                      <input type="text" id="firstName" required placeholder=" " class="register__input">
+                      <label for="firstName" class="register__label">First Name</label>
+                      <i class="bx bxs-user-account register__icon"></i>
+                  </div>
+
+                  <div class="register__box">
+                      <input type="text" id="lastName" required placeholder=" " class="register__input">
+                      <label for="lastName" class="register__label">Last Name</label>
+                      <i class="bx bxs-user-account register__icon"></i>
+                  </div>
+                  
+                  <div class="register__box">
+                      <input type="email" id="email" required placeholder=" " class="register__input">
+                      <label for="email" class="register__label">Email</label>
+                      <i class="bx bx-envelope register__icon"></i>
+                  </div>
+      
+                  <div class="register__box">
+                      <input type="password" id="password" required placeholder=" " class="register__input">
+                      <label for="password" class="register__label">Password</label>
+                      <i class="bx bx-low-vision register__icon register__password" id="registerPassword"></i>
+                  </div>
+              </div>
+      
+              <button type="submit" class="register__button">Create Account</button>
+          </form>
+  
+          <p class="register__switch">
+              Already have an account? 
+              <button id="registerButtonLogin" onclick="window.location.href='login.html'">Log In</button>
+              <a href="index.html" class="btn btn__secondary">Back to Home</a>
+          </p>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
